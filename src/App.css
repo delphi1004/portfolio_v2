@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  /* scroll-behavior: smooth; */
+  scrollbar-width: none;
+  scroll-snap-type: y proximity;
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.views-appear,
+.views-enter{
+  opacity: 1;
+  left: -100vw;
+}
+
+.views-appear.active,
+.views-enter.views-enter-active{
+  left:0;
+  transition: all 0.4s ease-in-out
+}
+
+.views-exit.views-exit-active{
+  opacity:1;
+  margin-left:100vw;
+  transition: all 1s ease-in-out
+}

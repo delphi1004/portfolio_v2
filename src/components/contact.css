@@ -1,0 +1,223 @@
+:root {
+  --transitionTime:0.7s;
+  --icon-margin:0px;
+}
+
+#contactContainer{
+    background-color: #426585;
+    /* background-color: #22aacb; */
+    /* background-color: #3a5875; */
+    width:100vw;
+    height:100vh;
+    margin-bottom: 100px;
+    top:0;
+    position: absolute;
+    /* overflow: hidden; */
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#contactMenuContainer{
+  opacity: 0;
+  position:relative;
+  right: 0%;
+  text-align: center;
+  top:0px;
+  width:100%;
+  height:500px;
+  font-size: 25px;
+  font-weight: lighter;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content:center;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contactInfo;
+  animation-delay:var(--delay);
+  animation-delay: 0.5s;
+  overflow: hidden;
+}
+
+@keyframes contactInfo {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+#contactCard {
+  padding-left: 20px;
+  padding-right: 20px;
+  width:300px;
+  height:0px;
+  opacity: 0;
+  /* margin:10px; */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: #bf8726;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contactCard;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contactCard;
+  animation-delay:0.5s;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes contactCard {
+  0% {opacity: 0;height:0px}
+  100% {opacity: 1;height:280px}
+}
+
+#contact-name {
+  position: relative;
+  top:-20px;
+  left:0px;
+  opacity:0;
+  font-size: 57px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+ -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 contact-name;
+  animation: 0.5s ease-in-out 0s normal forwards 1 contact-name;
+  animation-delay: 1.2s;
+}
+
+@keyframes contact-name {
+  0% {opacity: 0;left:200px}
+  100% {opacity: 1;left:0px}
+}
+
+#contact-title {
+  position: relative;
+  left:100px;
+  opacity:0;
+  font-size: 13.3px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  top:-80px;
+ -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 contact-title;
+  animation: 0.5s ease-in-out 0s normal forwards 1 contact-title;
+  animation-delay: 1.4s;
+}
+
+@keyframes contact-title {
+  0% {opacity: 0;left:200px}
+  100% {opacity: 1;left:0}
+}
+
+#contact-separator{
+  opacity:0;
+  width:0;
+  position: relative;
+  word-break: break-all;
+  padding:0;
+  margin:0;
+  margin-left: 20px;
+  height:1px;
+  top:-63px;
+  width:0px;
+  left:-20px;
+  border-bottom: 1px solid white;
+   -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-separator;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-separator;
+  animation-delay: 1.4s;
+}
+
+@keyframes contact-separator {
+  0% {opacity: 0;width:0px}
+  100% {opacity: 1;width:300px}
+}
+
+.MuiIconButton-label{
+  font-size: 50px;
+}
+
+#contact-email{
+  opacity: 0;
+  cursor: pointer;
+  left:0px;
+  position: relative;
+  top:-40px;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-email;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-email;
+  animation-delay: 1.9s;
+}
+
+@keyframes contact-email {
+  0% {opacity: 0;top:0px}
+  100% {opacity: 1;top:-40px}
+}
+
+#contact-email-icon{
+  font-size: 40px;
+  color:rgb(220,220,220);
+}
+
+#contact-linkedin-icon{
+  font-size: 40px;
+  color:rgb(220,220,220);
+}
+
+#contact-github-icon{
+  font-size: 33px;
+  color:rgb(220,220,220);
+}
+
+#contact-insta-icon{
+  font-size: 40px;
+  color:rgb(220,220,220);
+}
+
+#contact-linkedin{
+  opacity: 0;
+  cursor: pointer;
+  left:0px;
+  position: relative;
+  top:-40px;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-linkedin;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-linkedin;
+  animation-delay: 2.1s;
+}
+
+@keyframes contact-linkedin {
+  0% {opacity: 0;top:0px}
+  100% {opacity: 1;top:-40px}
+}
+
+#contact-github{
+  opacity: 0;
+  cursor: pointer;
+  left:0px;
+  position: relative;
+  top:-40px;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-github;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-github;
+  animation-delay: 2.3s;
+}
+
+@keyframes contact-github {
+  0% {opacity: 0;top:0px}
+  100% {opacity: 1;top:-40px}
+}
+
+#contact-insta{
+  opacity: 0;
+  cursor: pointer;
+  left:0px;
+  position: relative;
+  font-size: 40px;
+  top:-40px;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-insta;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 contact-insta;
+  animation-delay: 2.5s;
+}
+
+@keyframes contact-insta {
+  0% {opacity: 0;top:0px}
+  100% {opacity: 1;top:-40px}
+}
+
+#contactCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  transition: all 0.3s ease-in-out;
+}
