@@ -1,0 +1,11 @@
+node_modules/
+Practice/
+Server/
+Test/
+Client/
+build/
+onlyLocal/
+dist/
+rate-repository-api-master/
+.env
+*.log
