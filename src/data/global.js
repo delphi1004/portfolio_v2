@@ -40,7 +40,7 @@ export const Data_Generative = {
       description: 'The sound is the one of most sensory information for us to recognize what\'s going on the outside world. This audible information is mainly focused on our ears to perceive it. Hence, My question is that what happen if we could feel,see and touch this invisible energy. I mean how can our brain interpret the sound if the sound transformed into other medium. Does it help to listen to a sound? or it interrupts to enjoy listen to a sound? In order to do that, I used processing for sound analysis, Maya for build 3D object and laser cutter for cutting paper.'
     },
     {
-      width:28,
+      width:25,
       aspecRatio: 1.41,
       fullScreenScale: 1.3,
       year:2018,
@@ -53,7 +53,7 @@ export const Data_Generative = {
       description: 'This project is designed for the expression of name of people. As we have a unique name and it contains memories, identities, and joyful. Hence, I made a shape generator s/w by using Openframeworks. This s/w analysis people name and it generates very unique shapes related to the names. For instance, the first letter is the key value for the whole color scheme and rest of other letters effect on another visual effect.​'
     },
     {
-      width:50,
+      width:45,
       aspecRatio: 0.66,
       fullScreenScale: 1.5,
       year:2020,
@@ -66,7 +66,7 @@ export const Data_Generative = {
       description: 'I am excited to create an algorithm for a brush and natural colour composition. It is always nice moment when I am waiting for that full rendering is done because there are beauty of randomness.​'
     },
     {
-      width:40,
+      width:35,
       aspecRatio: 1.0,
       fullScreenScale: 1.3,
       year:2020,
@@ -79,7 +79,7 @@ export const Data_Generative = {
       description: 'Music and visual artwork are a valuable part of our daily life. Since both media induce human emotion, this thesis demonstrates how to convert music into visual artwork such as generative art. Especially, the project shows the method of connecting music emotion to the theme of colour. This thesis describes the human emotional model based on arousal and valence. Also, this thesis explains how colour affects our emotion. In order to connect music emotion into the colour theme, this thesis shows the method to retrieve music information which includes arousal and valence of the music. In order to generate visual artwork from the music, this thesis demonstrates the implementation of working software that integrates music emotion and musical characteristics such as frequency analysis. Besides, this thesis presents how to apply generative artwork into our daily life products..​'
     },
     {
-      width:55,
+      width:47,
       aspecRatio: 0.7,
       fullScreenScale: 1.30,
       year:2017,
@@ -111,7 +111,7 @@ export const Data_Interactive = {
       description: 'There was a project for Helsinki children\'s hospital. It was a student\'s volunteer project for the hospital. I was one of the team members which 4 people. We created an interactive art installation at the lobby of the hospital. Basically, kids could paint with there favorite color on the paper which already have a skeleton of a fish. Then they put the paper on the machine called "scanner" which I developed. Finally, when they push a button then the fish which they painted will become a digital fish in the digital aquarium. While I was doing with talented people together, it was the most impressive project experience because it helps kids to feel happy and excited.'
     },
     {
-      width:50,
+      width:45,
       aspecRatio: 0.75,
       fullScreenScale: 1.3,
       year:2017,
