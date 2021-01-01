@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/delphi1004/fullstack2020-project/issues"
   },
-  "homepage": "https://github.com/delphi1004/fullstack2020-project/#readme",
+  "homepage": "https://portfolio.johnlee012.com/",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-runtime": "^7.12.10",

@@ -84,7 +84,7 @@ export const Data_Generative = {
       fullScreenScale: 1.30,
       year:2017,
       thumbnailImage: 'drawingmachine_02',
-      contentsImage: ['drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
+      contentsImage: ['https://www.youtube.com/embed/mVPDrrjWDYY','drawingmachine_04.JPG', 'drawingmachine_01.JPG', 'drawingmachine_02.JPG' , 'drawingmachine_03.JPG','drawingmachine_05.JPG','drawingmachine_06.JPG'],
       title: 'Drawing machine',
       subTitle: 'Dawing machine expressed a morse code (ex:LOVE) as visual aspect.',
       tool: 'Arduino , Stepper motors , Sensors, Servo motors',
@@ -143,9 +143,9 @@ export const Data_Modeling = {
   resourcePath: './images/works',
   contents: [
     {
-      width:55,
+      width:40,
       aspecRatio: 0.77,
-      fullScreenScale: 1.2,
+      fullScreenScale: 1.6,
       year:2016,
       thumbnailImage: 'aqua_08.JPG',
       contentsImage: ['3dmodeling_12.jpg', '3dmodeling_01.jpg', '3dmodeling_02.jpg', '3dmodeling_03.jpg', '3dmodeling_04.jpg',
