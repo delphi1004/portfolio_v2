@@ -29,7 +29,7 @@ export const Data_Generative = {
     {
       width:40,
       aspecRatio: 0.66,
-      fullScreenScale: 1.9,
+      fullScreenScale: 1.8,
       year:2017,
       thumbnailImage: 'soundVis_01',
       contentsImage: ['soundvis_01.JPG', 'soundvis_02.JPG' , 'soundvis_03.JPG'],
@@ -79,7 +79,7 @@ export const Data_Generative = {
       description: 'Music and visual artwork are a valuable part of our daily life. Since both media induce human emotion, this thesis demonstrates how to convert music into visual artwork such as generative art. Especially, the project shows the method of connecting music emotion to the theme of colour. This thesis describes the human emotional model based on arousal and valence. Also, this thesis explains how colour affects our emotion. In order to connect music emotion into the colour theme, this thesis shows the method to retrieve music information which includes arousal and valence of the music. In order to generate visual artwork from the music, this thesis demonstrates the implementation of working software that integrates music emotion and musical characteristics such as frequency analysis. Besides, this thesis presents how to apply generative artwork into our daily life products..​'
     },
     {
-      width:47,
+      width:37,
       aspecRatio: 0.7,
       fullScreenScale: 1.30,
       year:2017,
@@ -98,7 +98,7 @@ export const Data_Interactive = {
   resourcePath: './images/works',
   contents: [
     {
-      width:45,
+      width:40,
       aspecRatio: 0.75,
       fullScreenScale: 1.5,
       year:2018,
@@ -143,7 +143,7 @@ export const Data_Modeling = {
   resourcePath: './images/works',
   contents: [
     {
-      width:40,
+      width:37,
       aspecRatio: 0.77,
       fullScreenScale: 1.6,
       year:2016,
@@ -164,7 +164,7 @@ export const Data_Software = {
   resourcePath: './images/works',
   contents: [
     {
-      width:45,
+      width:40,
       aspecRatio: 0.74,
       fullScreenScale: 1.45,
       year:'~ present',
@@ -177,7 +177,7 @@ export const Data_Software = {
       description: '3D modeling is one of my favorite hobbies'
     },
     {
-      width:25,
+      width:23,
       aspecRatio: 1.77,
       fullScreenScale: 1.10,
       year:'2010 ~ present',
@@ -196,7 +196,7 @@ export const Data_Exhibition_WhenLightEchoes = {
   resourcePath: './images/works',
   contents: [
     {
-      width:45,
+      width:40,
       aspecRatio: 0.74,
       fullScreenScale: 1.45,
       year:'26 May – 31 May 2019',
@@ -215,7 +215,7 @@ export const Data_Exhibition_SeeingMusic = {
   resourcePath: './images/works',
   contents: [
     {
-      width:45,
+      width:40,
       aspecRatio: 0.74,
       fullScreenScale: 1.45,
       year:'23 Feb - 03 Mar 2019',
