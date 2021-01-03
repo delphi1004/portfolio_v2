@@ -12,12 +12,12 @@
 #works-catagory{
   font-variant: small-caps;
   opacity: 0;
-  border-radius: 10px;
+  border-radius: 7px;
   border: 1px solid white;
   position: fixed;
   left:-300px;
   top:35px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: lighter;
   color:lightgrey;
   padding-left: 100px;

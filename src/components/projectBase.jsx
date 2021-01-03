@@ -19,11 +19,11 @@ viewData['works-software'] = {
 }
 
 viewData['exhibition-whenlightechoes'] = {
-  data: Data_Exhibition_WhenLightEchoes, title: 'When light echoes', background: '#bf8726'
+  data: Data_Exhibition_WhenLightEchoes, title: 'Exhibition', background: '#bf8726'
 }
 
 viewData['exhibition-seeingmusic'] = {
-  data: Data_Exhibition_SeeingMusic, title: 'Seeing music', background: '#bfa126'
+  data: Data_Exhibition_SeeingMusic, title: 'Exhibition', background: '#bfa126'
 }
 
 const ProjectBase = () => {

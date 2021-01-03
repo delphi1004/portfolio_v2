@@ -1,3 +1,155 @@
+/* :root {
+  --transitionTime:0.7s;
+  --icon-margin:0px;
+}
+
+#aboutContainer{
+    background-color: #426585;
+    width:100vw;
+    height:100vh;
+    margin-bottom: 100px;
+    top:0;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#aboutMenuContainer{
+  opacity: 0;
+  position:relative;
+  right: 0%;
+  text-align: center;
+  top:0px;
+  width:100%;
+  height:570px;
+  font-size: 25px;
+  font-weight: lighter;
+  display: flex;
+  align-items: left;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content:center;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 aboutInfo;
+  animation-delay:var(--delay);
+  animation-delay: 0.5s;
+  overflow: hidden;
+}
+
+@keyframes aboutInfo {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+#aboutCard {
+  padding-left: 20px;
+  padding-right: 20px;
+  width:500px;
+  height:0px;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  background-color: #bf8726;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1aboutCard;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 aboutCard;
+  animation-delay:0.5s;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+@keyframes aboutCard {
+  0% {opacity: 0;height:0%}
+  100% {opacity: 1;height:560px}
+}
+
+#about-name {
+  position: relative;
+  top:-20px;
+  left:0px;
+  opacity:0;
+  font-size: 57px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+ -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 about-name;
+  animation: 0.5s ease-in-out 0s normal forwards 1 about-name;
+  animation-delay: 1.2s;
+}
+
+@keyframes about-name {
+  0% {opacity: 0;left:200px}
+  100% {opacity: 1;left:0px}
+}
+
+#about-title {
+  position: relative;
+  left:100px;
+  opacity:0;
+  font-size: 13.3px;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  top:-80px;
+ -webkit-animation: 0.5s ease-in-out 0s normal forwards 1 about-title;
+  animation: 0.5s ease-in-out 0s normal forwards 1 about-title;
+  animation-delay: 1.4s;
+}
+
+@keyframes about-title {
+  0% {opacity: 0;left:200px}
+  100% {opacity: 1;left:0}
+}
+
+#about-separator{
+  opacity:0;
+  width:0;
+  position: relative;
+  word-break: break-all;
+  padding:0;
+  margin:0;
+  margin-left: 40px;
+  height:1px;
+  top:-63px;
+  width:0px;
+  left:-20px;
+  border-bottom: 1px solid white;
+   -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 about-separator;
+  animation: var(--transitionTime) ease-in-out 0s normal forwards 1 about-separator;
+  animation-delay: 1.5s;
+}
+
+@keyframes about-separator {
+  0% {opacity: 0;width:0px}
+  100% {opacity: 1;width:480px}
+}
+
+#about-description{
+  opacity: 0;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: left;
+  text-indent: 1em;
+  margin-top: -30px;
+  width:80%;
+  -webkit-animation: s ease-out 0s normal forwards 1 aboutDescription;
+  animation: 2s ease-out 0s normal forwards 1 aboutDescription;
+  animation-delay: 0.3s;
+}
+
+@keyframes aboutDescription {
+  0% {opacity: 0;width:0%}
+  100% {opacity:1;width:80%}
+} 
+
+#aboutCard:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  transition: all 0.3s ease-in-out;
+} */
+
 #aboutContainer{
     /* background-color: #3f6a8d; */
     /* background-color: #3e5f7e; */
