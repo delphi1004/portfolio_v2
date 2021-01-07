@@ -11,20 +11,20 @@ const FullScreenProjectViewer = ({ info, initialPageNo }) => {
 
   useEffect(() => {
     return () => {
-      console.log('set full screen gallery false')
+      //console.log('set full screen gallery false')
       dispatch(setShowFullScreenGallery(false))
     }
   }, [])
 
   const closeingHandler = () => {
-    console.log('EXIT FULL SCREEN MODE')
+    //console.log('EXIT FULL SCREEN MODE')
     setStartClosing(true)
     setTimeout(() => {
       dispatch(setShowFullScreenGallery(false))
     }, 500)
   }
 
-  console.log(info)
+  //console.log(info)
   return (
     <div className={!startClosing ? 'fullScreen-project-Viewer active-openning' : 'fullScreen-project-Viewer active-closing'} >
       <p id='works-catagory'>{info.title} </p>

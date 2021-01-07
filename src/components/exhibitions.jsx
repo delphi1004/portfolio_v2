@@ -13,7 +13,7 @@ const Exhibition = () => {
     dispatch(setCurrentSubMenu(global.menu.idle))
   }, [])
 
-  console.log(Data_ExhibitionSubMenu)
+  //console.log(Data_ExhibitionSubMenu)
 
   return (
     <div id='exhibitionContainer'>

@@ -13,6 +13,7 @@ import Exhibition from './components/exhibitions'
 import Contact from './components/contact'
 import ProjectBase from './components/projectBase'
 import FullScreenProjectViewer from './components/project/fullScreenProjectViewer'
+require('../public/favicon.ico')
 
 const RouterViewer = () => {
   const location = useLocation()
@@ -41,7 +42,7 @@ function App() {
   const showFullScreenGallery = useSelector(state => state.systemStatus.showFullScreenGallery)
   const galleryInfo = useSelector(state => state.systemStatus.fullScreenGalleryInfo)
 
-  console.log('showFullScreenGallery', showFullScreenGallery, galleryInfo)
+  // console.log('showFullScreenGallery', showFullScreenGallery, galleryInfo)
 
   return (
     <div className="App">

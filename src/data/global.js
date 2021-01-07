@@ -36,7 +36,7 @@ export const Data_Generative = {
       title: 'Sound visualisation',
       subTitle: 'This project demonstrates how to convert sound into a physical object',
       descptionTitle:'a shape of \'Hello\' ',
-      tool: 'Processing , Maya , Pakakura',
+      tool: 'Processing , Maya , Pepakura',
       description: 'The sound is the one of most sensory information for us to recognize what\'s going on the outside world. This audible information is mainly focused on our ears to perceive it. Hence, My question is that what happen if we could feel,see and touch this invisible energy. I mean how can our brain interpret the sound if the sound transformed into other medium. Does it help to listen to a sound? or it interrupts to enjoy listen to a sound? In order to do that, I used processing for sound analysis, Maya for build 3D object and laser cutter for cutting paper.'
     },
     {
@@ -155,7 +155,7 @@ export const Data_Modeling = {
       subTitle: 'Aquarium project for Helsinki children\'s hospital',
       descptionTitle : '3D modeling is one of my favorite hobbies',
       tool: 'Fusion 360',
-      description: '3D modeling is one of my favorite hobbies'
+      description: 'I am enjoying using fusion 360 for designing a physical scene of the early stage of my installation. The most benefit is that it saves time, gives me the design of varieties. Also, making a 3D model is one of the best communication methods among team members for sharing the actual scene how it looks like. Last, it is fun!'
     }
   ]
 }
@@ -174,7 +174,7 @@ export const Data_Software = {
       subTitle: 'Aquarium project for Helsinki children\'s hospital',
       descptionTitle : 'Software architecture design is similar to design a city',
       tool: 'UML, Visual studio, Xcode',
-      description: '3D modeling is one of my favorite hobbies'
+      description: 'The measurement is needed for the production of semiconductor after Etch process.  The old method damages the surface of Wafer cause of using profiler, so we could not measure the part of transistor for the real circuit.  This is the automated S/W project which used for semiconductor 300mm & LCD FAB.  For the perfect automatic system, communicate with the host of customer and SECS (SEMI Equipment Communications Standard) Message formulation. -This is the virtual device class design which manages all electronic devices that are attached to the machines smoothly and able to multiply the action. -Recipe Class Design that makes the user makes recipe (The essential factor for the machine automation) easier and faster than before. -Runjob Class Design which operates made recipe automatically. -Sequence Editor Class Design for data measurement -SECS/GEM Communication Class Design for FA (Factory Automation).'
     },
     {
       width:23,
@@ -220,7 +220,7 @@ export const Data_Exhibition_SeeingMusic = {
       fullScreenScale: 1.45,
       year:'23 Feb - 03 Mar 2019',
       thumbnailImage: 'aqua_08.JPG',
-      contentsImage: ['https://www.youtube.com/embed/3yvqrAyYy-4','SeeingSound_01.JPG','SeeingSound_03.JPG','SeeingSound_04.JPG','SeeingSound_08.JPG','SeeingSound_10.JPG','SeeingSound_11.JPG','SeeingSound_12.JPG'],
+      contentsImage: ['https://www.youtube.com/embed/3yvqrAyYy-4','SeeingSound_01.JPG','SeeingSound_03.JPG','SeeingSound_04.JPG','SeeingSound_08.JPG','SeeingSound_10.JPG','3dmodeling_01.jpg','SeeingSound_12.JPG'],
       title: 'SEEING SOUND LISTENING TO IMAGE',
       subTitle: 'Aalto University Finland',
       descptionTitle : 'Aalto University Finland',
@@ -263,7 +263,7 @@ export const Data_WorksSubMenu = {
       id:global.worksMenu.software,
       title: 'SOFTWARE',
       titleImage:require('../data/images/thumbnail/thumbnail_software_01.png'),
-      description: '“Software architecture design is similar to design a city.”',
+      description: '“Designing software architecture is always a pleasure.”',
       author: 'Vera Molnar',
       backgroundColor: '#abbf26',
       extraDescription: 'Objective-C Swift JavaScript React C C++ C# Node.js'

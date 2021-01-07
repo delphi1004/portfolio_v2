@@ -9,7 +9,7 @@ const Header = () => {
   const dispatch = useDispatch()
 
   const menuClicked = (id) => {
-    console.log('menu clicked ', id)
+    //console.log('menu clicked ', id)
     dispatch(setCurrentMenu(id))
   }
 

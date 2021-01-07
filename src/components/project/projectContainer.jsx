@@ -11,7 +11,7 @@ const projectContainer = ({ info }) => {
     }, 1000)
   }, [])
 
-  console.log('project container', info)
+  //console.log('project container', info)
 
   return (
     <div id='project-container' style={{ backgroundColor: info.background }}>

@@ -1,7 +1,10 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { createStore, combineReducers, applyMiddleware , compose  , } from 'redux'
 import thunk from 'redux-thunk'
-import { composeWithDevTools } from 'redux-devtools-extension'
+// import { composeWithDevTools } from 'redux-devtools-extension'
 import statusReducer from './reducer/statusReducer'
+
+// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const composeEnhancers =  compose
 
 const reducer = combineReducers({
   systemStatus:statusReducer
@@ -9,7 +12,7 @@ const reducer = combineReducers({
 
 const Store = createStore(
   reducer,
-  composeWithDevTools(
+  composeEnhancers(
     applyMiddleware(thunk)
   )
 )

@@ -33,7 +33,7 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
     }
 
     return function cleanup() {
-      console.log('removeEventListener')
+      //console.log('removeEventListener')
       dispatch(setShowFullScreenGallery(false))
       window.removeEventListener('resize', handleResize)
     }
@@ -97,7 +97,7 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
   }
 
   const clickHandler = () => {
-    console.log(showOriginalSize)
+    //console.log(showOriginalSize)
     if (!showOriginalSize) {
       fullScreenHandler(pageNo)
     }

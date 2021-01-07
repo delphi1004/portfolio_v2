@@ -5,7 +5,7 @@ import App from './App'
 import { Provider } from 'react-redux'
 import Store from './store'
 
-console.log(Store.getState())
+// console.log(Store.getState())
 
 ReactDOM.render(
   <Provider store={Store}>
