@@ -7,61 +7,62 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .title{
-  color:black;
-  text-transform: uppercase;
-  visibility: none;
-  /* font-family: 'Roboto Slab'; */
-  font-size: 110px;
-  font-weight: bolder;
-  width:700px;
-  margin-left: 50px;
-  text-align: left;
- -webkit-animation: 1s ease 0s normal forwards 1 titleFadein;
-  animation: 1s ease 0s normal forwards 1 titleFadein;
+    opacity: 0;
+    margin:0;
+    color:black;
+    text-transform: uppercase;
+    visibility: none;
+    font-size: 5.5vw;
+    font-weight: 700;
+    width:700px;
+    margin-left: 100px;
+    text-align: left;
+    /* letter-spacing: 3px; */
+   -webkit-animation: 1s ease-in-out 0s normal forwards 1 titleFadein;
+    animation: 1s ease-in-out 0s normal forwards 1 titleFadein;
 }
+
+/* @keyframes titleFadein{
+    0% { opacity:0.2;margin-top:100vw}
+    100% { opacity:1; margin-top:0px}
+} */
 
 @keyframes titleFadein{
-    0% { opacity:0;margin-top:40vh}
-    66% { opacity:0; }
-    100% { opacity:1; margin-top:15vh}
-}
-
-@-webkit-keyframes titleFadein{
-    0% { opacity:0;margin-top:80vh}
-    66% { opacity:0; }
-    100% { opacity:1; margin-top:30vh}
+    0% { opacity:0.2;margin-left:100vw}
+    100% { opacity:1; margin-left:100px}
 }
 
 .description{
   text-transform: uppercase;
   margin: 0;
   color:white;
-  font-family: 'Roboto';
-  font-weight: bolder;
+  font-weight:500;
   width:0px;
-  margin-left: 50px;
+  font-size: 6vw;
+  margin-left: 100px;
   text-align: left;
-  letter-spacing: 2px;
-   -webkit-animation: 2.5s ease 0s normal forwards 1 descriptionFadein;
-  animation: 2.5s ease 0s normal forwards 1 descriptionFadein;
+  letter-spacing: 3px;
+  -webkit-animation: 2s ease 0s normal forwards 1 descriptionFadein;
+  animation: 2s ease 0s normal forwards 1 descriptionFadein;
 }
+
+@media only screen and (min-width: 1920px) {
+   .description{
+      font-size: 4.0vw;
+   }
+
+   .title{
+      font-size: 4.0vw;
+   }
+}
+
 
 @keyframes descriptionFadein{
-    0% { opacity:0 ; margin-bottom: 100vh;width:0px;font-size: 0px;}
+    0% { opacity:0 ; margin-bottom: 100vh;width:0px;}
     66% { opacity:0; }
-    100% { opacity:1;margin-bottom: 0vh;width:700px;font-size: 120px;}
+    100% { opacity:1;margin-bottom: 0vh;width:700px;}
 }
-
-/* @keyframes descriptionFadein{
-    0% { opacity:0 ; margin-right: 50vh;}
-    66% { opacity:0; }
-    100% { opacity:1;margin-right: 0vh}
-} */
-
-
-
-
-

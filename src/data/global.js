@@ -285,7 +285,7 @@ export const Data_ExhibitionSubMenu = {
     },
     {
       id:global.exhibitionMenu.seeingSound,
-      title: 'SEEING MUSIC',
+      title: 'SEEING            MUSIC',
       titleImage:require('../data/images/thumbnail/thumbnail_seeing_sound.JPG'),
       description: 'If a sound could be converted into an image or physical object, could that amplify our cognitive understanding of the sounds we hear? Or does it instead alter or interrupt this process?',
       author: 'Vera Molnar',
