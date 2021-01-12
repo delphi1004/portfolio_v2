@@ -209,6 +209,30 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+
+  .project-description{
+    visibility: hidden;
+  }
+
+  .project-year{
+    font-size:12px;
+  }
+
+  .project-tool{
+    font-size: 12px;
+    width:200px;
+  }
+
+  #project-separator{
+    height:200px;
+  }
+
+  #projectViewer{
+    height:150px;
+  }
+}
+
 #images-container:hover ~ #descriptionContainer > .project-title.title-active{
   -webkit-animation: 0.4s ease-out 0s normal forwards 1 project-title-hide;
   animation: 0.4s ease-out 0s normal forwards 1 project-title-hide;
