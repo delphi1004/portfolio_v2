@@ -99,7 +99,7 @@
   width:450px;
   font-size: 20px;
   font-weight: lighter;
-  text-align: justify;
+  text-align:left;
   line-height:140%;
   animation: 1s ease-out 0s normal forwards 1 about-text;
   animation-delay: 1.7s;

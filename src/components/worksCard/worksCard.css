@@ -169,6 +169,8 @@
   font-weight: 400;
   letter-spacing: 1.0px;
   height:10px;
+  display: flex;
+  align-items: end;
 }
 
 #worksCard:hover{
