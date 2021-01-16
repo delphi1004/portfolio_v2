@@ -3,7 +3,6 @@ import './title.css'
 import Curtain from './curtain'
 
 const Title = () => {
-  // const title = 'I am John Lee'
   return (
     <div id='titleContainer'>
       <Curtain />

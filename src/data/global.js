@@ -235,7 +235,7 @@ export const Data_WorksSubMenu = {
     {
       id:global.worksMenu.generativeArt,
       title: 'GENERATIVE  ART',
-      titleImage:require('../data/images/thumbnail/thumbnail_ganerative_brush_01.png'),
+      titleImage:'thumbnail_ganerative_brush_01.png',
       description: '“This may sound paradoxical, but the machine, which is thought to be cold and inhuman, can help to realize what is most subjective, unattainable, and profound in a human being.” - Vera Molnar',
       author: 'Vera Molnar',
       backgroundColor: '#bf8726',
@@ -244,7 +244,7 @@ export const Data_WorksSubMenu = {
     {
       id:global.worksMenu.interactiveArt,
       title: 'INTERACTIVE ART',
-      titleImage:require('../data/images/thumbnail/thumbnail_interactive_01.png'),
+      titleImage:'thumbnail_interactive_01.png',
       description: '“If our child doesn’t have time to finish a fish before an appointment, it’s certain that we won’t be leaving the building before the fish is in the aquarium.” - from Helsinki’s New Children’s Hospital',
       author: 'Vera Molnar',
       backgroundColor: '#bfa126',
@@ -253,7 +253,7 @@ export const Data_WorksSubMenu = {
     {
       id:global.worksMenu.modeling,
       title: '3D MODELING',
-      titleImage:require('../data/images/thumbnail/thumbnail_3dmodeling_12.png'),
+      titleImage:'thumbnail_3dmodeling_12.png',
       description: '“Fusion 360 is my favorite 3D modeling tool.”',
       author: 'Vera Molnar',
       backgroundColor: '#bfba26',
@@ -262,7 +262,7 @@ export const Data_WorksSubMenu = {
     {
       id:global.worksMenu.software,
       title: 'SOFTWARE',
-      titleImage:require('../data/images/thumbnail/thumbnail_software_01.png'),
+      titleImage:'thumbnail_software_01.png',
       description: '“Designing software architecture is always a pleasure.”',
       author: 'Vera Molnar',
       backgroundColor: '#abbf26',
@@ -277,7 +277,7 @@ export const Data_ExhibitionSubMenu = {
     {
       id:global.exhibitionMenu.whenlightEchoes,
       title: 'WHEN LIGHT ECHOES',
-      titleImage:require('../data/images/thumbnail/thumbnail_korea_Exhibition_06.JPG'),
+      titleImage:'thumbnail_korea_Exhibition_06.JPG',
       description: 'A light echo is a physical phenomenon caused by light reflected off surfaces and returning to the observer with a relative delay. In this installation the viewer observes the input of hand motion returned to them in an audiovisual form.',
       author: 'Vera Molnar',
       backgroundColor: '#bf8726',
@@ -286,7 +286,7 @@ export const Data_ExhibitionSubMenu = {
     {
       id:global.exhibitionMenu.seeingSound,
       title: 'SEEING            MUSIC',
-      titleImage:require('../data/images/thumbnail/thumbnail_seeing_sound.JPG'),
+      titleImage:'thumbnail_seeing_sound.JPG',
       description: 'If a sound could be converted into an image or physical object, could that amplify our cognitive understanding of the sounds we hear? Or does it instead alter or interrupt this process?',
       author: 'Vera Molnar',
       backgroundColor: '#bfa126',
@@ -294,19 +294,4 @@ export const Data_ExhibitionSubMenu = {
     },
   ],
   data: global.exhibitionMenu
-}
-
-export const Data_ContactSubMenu = {
-  contents: [
-    {
-      id:global.contactMenu.basicInfo,
-      title: 'John Lee',
-      titleImage:require('../data/images/thumbnail/thumbnail_korea_Exhibition_06.JPG'),
-      description: 'A creative developer and New media artist',
-      author: 'Vera Molnar',
-      backgroundColor: '#bf8726',
-      extraDescription: 'C C++ Objective-C React Node.js React Native GraphQL'
-    }
-  ],
-  data: null
 }

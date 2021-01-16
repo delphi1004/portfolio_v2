@@ -2,7 +2,8 @@ module.exports = {
   'env': {
     'node': true,
     'browser': true,
-    'es6': true
+    'es6': true,
+    "jest/globals": true
   },
   'settings': {
     'react': {
@@ -21,7 +22,7 @@ module.exports = {
     'sourceType': 'module'
   },
   'plugins': [
-    'react'
+    'react','jest'
   ],
   'rules': {
     'indent': [
@@ -47,6 +48,11 @@ module.exports = {
       'error', { 'before': true, 'after': true }
     ],
     'no-console': 0,
-    'react/prop-types': 0
+    'react/prop-types': 0,
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error'
   }
 }

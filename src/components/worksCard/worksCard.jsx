@@ -12,7 +12,6 @@ const WorksCard = ({ index, info }) => {
   const number = (index + 1).toString().padStart(2, 0)
 
   const clickHandler = (id) => {
-    //console.log('clicked id ', id)
     dispatch(setCurrentSubMenu(id))
 
     switch (id) {
@@ -27,7 +26,7 @@ const WorksCard = ({ index, info }) => {
 
   return (
     <div id='worksCard' style={{ '--backgroundColor': info.backgroundColor, '--delay': delay }} onClick={() => clickHandler(info.id)}>
-      <img id='thumbnailImage' src={info.titleImage.default} alt='image' />
+      <img id='thumbnailImage' src={require(`../../data/images/thumbnail/${info.titleImage}`).default} alt='image' />
       <p id='works-title'>{info.title}</p>
       <p id='works-separator'></p>
       <p id='works-description'>{info.description}</p>

@@ -30,15 +30,6 @@ module.exports = {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader'],
       },
-      // {
-      //   test: /\.(png|jpe?g|gif)$/i,
-      //   loader: 'file-loader',
-      //   options: {
-      //     name: '[name].[ext]',
-      //     outputPath: 'images/',
-      //     publicPath: 'images/',
-      //   },
-      // },
       {
        test: /\.(jpe?g|jpg|JPG|gif|png|svg|ico)$/i,
        use: [
