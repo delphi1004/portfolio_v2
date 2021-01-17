@@ -48,8 +48,8 @@
   margin-left: 100px;
   text-align: left;
   letter-spacing: 3px;
-  -webkit-animation: 2s ease 0s normal forwards 1 descriptionFadein;
-  animation: 2s ease 0s normal forwards 1 descriptionFadein;
+  -webkit-animation: 2.6s ease-in-out 1 normal forwards 1 descriptionFadein;
+  animation: 2.6s ease-in-out forwards 1 descriptionFadein;
 }
 
 @media only screen and (min-width: 1899px) {

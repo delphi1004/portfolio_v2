@@ -9,4 +9,3 @@ dist/
 rate-repository-api-master/
 .env
 *.log
-*.yml
