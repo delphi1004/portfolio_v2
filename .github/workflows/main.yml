@@ -11,7 +11,6 @@ on:
     types: [opened, synchronize]
 
 jobs:
-
   tagging:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip')}}
