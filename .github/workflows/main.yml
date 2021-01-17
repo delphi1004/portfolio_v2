@@ -20,7 +20,6 @@ jobs:
         uses: anothrNick/github-tag-action@1.33.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PRERELEASE_SUFFIX : ""
           WITH_V: true
           DEFAULT_BUMP: patch
           
