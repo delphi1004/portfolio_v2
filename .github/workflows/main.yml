@@ -41,4 +41,4 @@ jobs:
       - name: test
         run: npm run test
       - name: build
-        run: bpm run build
+        run: npm run build
