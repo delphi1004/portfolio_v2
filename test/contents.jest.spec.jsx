@@ -4,7 +4,6 @@ import { act } from 'react-dom/test-utils'
 import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
-import configureStore from 'redux-mock-store'
 import Title from '../src/components/title'
 import Header from '../src/components/header'
 import ProjectContainer from '../src/components/project/projectContainer'
@@ -65,8 +64,9 @@ describe('check the contents', () => {
 
     await act(() => sleep(2000))
 
-    component.debug()
-
     expect(component.container).toHaveTextContent('The sound is the one of most sensory information')
+    expect(component.container).toHaveTextContent('a shape of name')
+    expect(component.container).toHaveTextContent('a beauty of randomness')
+    expect(component.container).toHaveTextContent('Music and visual artwork are a valuable part of our daily life')
   })
 })
