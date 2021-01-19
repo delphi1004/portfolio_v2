@@ -33,7 +33,6 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
     }
 
     return function cleanup() {
-      //console.log('removeEventListener')
       dispatch(setShowFullScreenGallery(false))
       window.removeEventListener('resize', handleResize)
     }

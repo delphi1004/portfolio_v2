@@ -21,11 +21,6 @@
   "bugs": {
     "url": "https://github.com/delphi1004/portfolio_v2.git/issues"
   },
-  "jest": {
-    "moduleNameMapper": {
-      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy"
-    }
-  },
   "homepage": "https://portfolio.johnlee012.com/",
   "devDependencies": {
     "@babel/core": "^7.12.10",

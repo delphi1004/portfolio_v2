@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './projectContainer.css'
 import ProjectViewer from './projectViewer'
 
-const projectContainer = ({ info }) => {
+const ProjectContainer = ({ info }) => {
   const [displayProjects, setDisplayProjects] = useState(false)
 
   useEffect(() => {
@@ -10,8 +10,6 @@ const projectContainer = ({ info }) => {
       setDisplayProjects(true)
     }, 1000)
   }, [])
-
-  //console.log('project container', info)
 
   return (
     <div id='project-container' style={{ backgroundColor: info.background }}>
@@ -29,4 +27,4 @@ const projectContainer = ({ info }) => {
   )
 }
 
-export default projectContainer
+export default ProjectContainer
