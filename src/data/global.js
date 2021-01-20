@@ -89,7 +89,7 @@ export const Data_Generative = {
       subTitle: 'Dawing machine expressed a morse code (ex:LOVE) as visual aspect.',
       tool: 'Arduino , Stepper motors , Sensors, Servo motors',
       descptionTitle:'.-.. --- ...- .',
-      description: 'This project is designed for new type of drawing machine which can draw curves and lines naturally. Morse code is one of significant code to communicate each other. So, the drawing machine will express Some Morse code(ex:LOVE) as visual aspect.'
+      description: 'This project is designed for a new type of drawing machine which can draw curves and lines naturally. Morse code is one of significant code to communicate each other. So, the drawing machine will express Some Morse code(ex:LOVE) as visual aspect.'
     },
   ]
 }

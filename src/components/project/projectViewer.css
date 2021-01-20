@@ -55,7 +55,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  line-height: 1;
+  line-height: 0.85;
 }
 
 .project-title.title-active{
@@ -178,15 +178,15 @@
 
 .project-description{
   opacity: 0;
-  text-align: justify;
+  text-align: left;
   width: 28vw;
   text-indent: 1.6em;
   position: relative;
   z-index: 1;
   font-size: 18px;
   font-weight: 200;
-  line-height: 1.6;
-  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  letter-spacing: 0.05rem;
   top:-100px;
   left:17px;
 }
