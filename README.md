@@ -13,6 +13,9 @@ https://portfolio.johnlee012.com/
 
 | day | hours | details  |
 | :----:|:-----| :-----|
-| 17.12.2020 | 3    | tutustuminen JavaFX:n |
+| 14 Dec 2020 | 2.5    | Ideation , planning |
+| 15 Dec 2020 | 2.5    | Research well made portfolio sites |
+| 16 Dec 2020 | 2.5    | Study about flex box , webpack configuration |
+| 17 Dec 2020 | 6.5    | Initial commit |
 
 
