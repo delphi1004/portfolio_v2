@@ -12,8 +12,8 @@
 ### Working hours of the first half of the project ( in https://github.com/delphi1004/fullstack2020-project ).
 <br />
 
-| day | hours | details        |
-| :----:|:-----| :-----|
+| day    | hours | details        |
+| :------:|:---------| :--------|
 | 14 Dec 2020 | 4.5    | Ideation , planning |
 | 15 Dec 2020 | 5.5    | Research well made portfolio sites |
 | 16 Dec 2020 | 7.5    | Study about flex box , css animation , webpack configuration |
