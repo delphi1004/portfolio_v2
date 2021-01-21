@@ -10,7 +10,7 @@
 <br />
 
 ### Working hours of the first half of the project ( in https://github.com/delphi1004/fullstack2020-project ).
-
+<br />
 | day | hours | details  |
 | :----:|:-----| :-----|
 | 14 Dec 2020 | 4.5    | Ideation , planning |
@@ -32,7 +32,7 @@
 <br />
 
 ### Working hours of the second half of the project ( in https://github.com/delphi1004/portfolio_v2 ).
-
+<br />
 | day | hours | details  |
 | :----:|:-----| :-----|
 | 01 Jan 2021 | 5.5    | first published , modified contents scale related to the screen size |
