@@ -9,7 +9,7 @@
 <br />
 <br />
 
-### Working hours of the first half of the project ( in https://github.com/delphi1004/fullstack2020-project ).
+### Working hours of the first half of the project ( in https://github.com/delphi1004/fullstack2020-project ).<br />
 
 | day | hours | details  |
 | :----:|:-----| :-----|
@@ -31,7 +31,7 @@
 <br />
 <br />
 
-### Working hours of the second half of the project ( in https://github.com/delphi1004/portfolio_v2 ).
+### Working hours of the second half of the project ( in https://github.com/delphi1004/portfolio_v2 ).<br />
 
 
 | day | hours | details  |
