@@ -26,7 +26,7 @@
 | 23 Dec 2020 | 7.5    | modified project viewer , refactoring it |
 | 24 Dec 2020 | 4.0    | modified workscard , added resources |
 | 28 Dec 2020 | 8.0    | first added image gallery module , modified css style for several modules |
-| 31 Dec 2020 | 7.5    | first added contact card  , current repo has moved to the new repo , setting cpanel |
+| 31 Dec 2020 | 7.5    | first added contact card  , current repo has moved to the new repo (https://github.com/delphi1004/portfolio_v2) , setting cpanel |
 
 <br />
 <br />
