@@ -5,7 +5,9 @@
 https://portfolio.johnlee012.com/
 
 
-### Working hours
+###
+
+### Working hours ( in https://github.com/delphi1004/fullstack2020-project )
 
 | day | hours | details  |
 | :----:|:-----| :-----|
