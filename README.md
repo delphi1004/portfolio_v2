@@ -12,8 +12,8 @@
 ### Working hours of the first half of the project ( in https://github.com/delphi1004/fullstack2020-project ).
 <br />
 
-| day    | hours | details        |
-| :------:|:---------| :--------|
+| day | hours | details  |
+| :----:|:-----| :-----|
 | 14 Dec 2020 | 4.5    | Ideation , planning |
 | 15 Dec 2020 | 5.5    | Research well made portfolio sites |
 | 16 Dec 2020 | 7.5    | Study about flex box , css animation , webpack configuration |
@@ -26,7 +26,7 @@
 | 23 Dec 2020 | 7.5    | modified project viewer , refactoring it |
 | 24 Dec 2020 | 4.0    | modified workscard , added resources |
 | 28 Dec 2020 | 8.0    | first added image gallery module , modified css style for several modules |
-| 31 Dec 2020 | 7.5    | first added contact card  , current repo has moved to the new repo (https://github.com/delphi1004/portfolio_v2) , setting cpanel |
+| 31 Dec 2020 | 7.5    | first added contact card  , current repo has moved to the new repo , setting cpanel |
 
 <br />
 <br />
