@@ -16,7 +16,7 @@
     color:black;
     text-transform: uppercase;
     visibility: none;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 700;
     width:700px;
     margin-left: 100px;
@@ -26,9 +26,31 @@
     animation: 1s ease-in-out 0s normal forwards 1 titleFadein;
 }
 
+.title-second{
+    opacity: 0;
+    margin:0;
+    color:black;
+    text-transform: uppercase;
+    visibility: none;
+    font-size: 4vw;
+    font-weight: 700;
+    width:700px;
+    margin-left: 100px;
+    text-align: left;
+    line-height: 90%;
+   -webkit-animation: 3s ease-in-out 0s normal forwards 1 title-second-Fadein;
+    animation: 3s ease-in-out 0s normal forwards 1 title-second-Fadein;
+    animation-delay: 1s;
+}
+
 @keyframes titleFadein{
     0% { opacity:0.2;margin-left:100vw}
     100% { opacity:1; margin-left:100px}
+}
+
+@keyframes title-second-Fadein{
+    0% { opacity:0;}
+    100% { opacity:1;}
 }
 
 .description{

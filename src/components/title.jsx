@@ -8,7 +8,7 @@ const Title = () => {
       <Curtain />
       <div style={{ marginTop: '20vh' }}></div>
       <p className='title'>I am</p>
-      <p className='title' style={{ marginBottom: '40px' }}>John Lee</p>
+      <p className='title-second' style={{ marginBottom: '40px' }}>John Lee</p>
       <div style={{ marginTop: '4vh' }}></div>
       <p className='description'>a Creative</p>
       <p className='description'>technologist</p>
