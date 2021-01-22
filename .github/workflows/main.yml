@@ -42,14 +42,6 @@ jobs:
         run: npm run test
       - name: build
         run: npm run build
-      - name: FTP Deploy to blue host
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.DEPLOY_FTP_HOST }}
-          username: ${{ secrets.DEPLOY_FTP_USER }}
-          password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
-          local-dir: ${{ secrets.DEPLOY_FTP_SOURCE_DIR }}
-          server-dir: ${{ secrets.DEPLOY_FTP_TARGET_DIR }}
         
 
         
