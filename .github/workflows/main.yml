@@ -50,15 +50,6 @@ jobs:
           password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
           local-dir: ${{ secrets.DEPLOY_SOURCE_DIR }}
           server-dir: ${{ secrets.DEPLOY_TARGET_DIR }}
-          
-#         uses: easingthemes/ssh-deploy@v2.1.5
-#         env:
-#           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-#           ARGS: "-rltgoDzvO --delete"
-#           SOURCE: ${{ secrets.DEPLOY_SOURCE_DIR }}
-#           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
-#           REMOTE_USER: ${{ secrets.DEPLOY_USER }}
-#           TARGET: ${{ secrets.DEPLOY_TARGET_DIR }}
         
 
         
