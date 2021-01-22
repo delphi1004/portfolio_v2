@@ -32,7 +32,6 @@ const ProjectBase = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
     const currentUrl = window.location.href.split('/')
-    //console.log('----', currentUrl)
     currentViewData = viewData[`${currentUrl[3]}-${currentUrl[4]}`]
     setBackgroundColor(currentViewData.background)
   }, [])
@@ -40,8 +39,6 @@ const ProjectBase = () => {
   if (!currentViewData) {
     return null
   }
-
-  // console.log('projectbase', currentViewData)
 
   return (
     <div className='project-base' style={{ backgroundColor: backgroundColor }} >

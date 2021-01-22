@@ -96,7 +96,6 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
   }
 
   const clickHandler = () => {
-    //console.log(showOriginalSize)
     if (!showOriginalSize) {
       fullScreenHandler(pageNo)
     }
@@ -110,7 +109,6 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
       {info.contentsImage.length > 1 && <ArrowBackIosIcon id='scroll-prev' onClick={onPrevhandler} />}
       {info.contentsImage.length > 1 && <ArrowForwardIosIcon id='scroll-next' onClick={onNexthandler} />}
 
-      {/* <ZoomOutMapIcon id = 'full-screen'/> */}
       <div id='gallery' ref={myRef} onClick={() => clickHandler()}>
         {info.contentsImage.map((resource, index) => SelectResource(resource, index))}
       </div>

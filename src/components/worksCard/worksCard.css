@@ -144,7 +144,6 @@
   width:1px;
   opacity: 0;
   height:125px;
-  /* top:-100px; */
   left:120px;
   border-left: 1px solid white;
   -webkit-animation: var(--transitionTime) ease-in-out 0s normal forwards 1 vertical-separator;

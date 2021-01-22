@@ -1,10 +1,8 @@
-/* eslint-disable no-unused-vars */
 import './App.css'
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom'
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
-import { Data_Generative } from './data/global'
 import Header from './components/header'
 import Title from './components/title'
 import About from './components/about'
@@ -41,8 +39,6 @@ const RouterViewer = () => {
 function App() {
   const showFullScreenGallery = useSelector(state => state.systemStatus.showFullScreenGallery)
   const galleryInfo = useSelector(state => state.systemStatus.fullScreenGalleryInfo)
-
-  // console.log('showFullScreenGallery', showFullScreenGallery, galleryInfo)
 
   return (
     <div className="App">

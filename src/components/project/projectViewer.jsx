@@ -35,7 +35,6 @@ const ProjectViewer = ({ info }) => {
   }, [])
 
   const fullScreenHandler = (pageNo) => {
-    //console.log('full screen!', pageNo)
     dispatch(setShowFullScreenGallery(true))
     dispatch(setFullScreenGalleryInfo(info, pageNo))
   }
