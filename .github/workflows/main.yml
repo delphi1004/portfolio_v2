@@ -48,8 +48,8 @@ jobs:
           server: ${{ secrets.DEPLOY_FTP_HOST }}
           username: ${{ secrets.DEPLOY_FTP_USER }}
           password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
-          local-dir: ${{ secrets.DEPLOY_FTP_SOURCE_DIR }}
-          server-dir: ${{ secrets.DEPLOY_FTP_TARGET_DIR }}
+          local-dir: ${{ secrets.DEPLOY_SOURCE_DIR }}
+          server-dir: ${{ secrets.DEPLOY_TARGET_DIR }}
           
 #         uses: easingthemes/ssh-deploy@v2.1.5
 #         env:
