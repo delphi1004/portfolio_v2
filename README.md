@@ -49,6 +49,6 @@
 | 17 Jan 2021 | 8.0    | Setting CI , bug fixing for testing |
 | 19 Jan 2021 | 7.0    | added project viewer testing scenario |
 | 21 Jan 2021 | 6.0    | project container style modified |
-| 22 Jan 2021 | 8.0    | Setting for deployment to blue host. I have got technical issues with blue host.
+| 22 Jan 2021 | 8.0    | Setting CD to blue host. I have got technical issues with blue host.
 
 
