@@ -73,7 +73,7 @@ class Particle {
 
     if (dist <= 150) {
       this.velocity.x = (this.curX - x) * 0.05
-      this.velocity.y = (this.curX - y) * 0.05
+      this.velocity.y = (this.curY - y) * 0.05
       this.ellipseSec = this.p5.millis()
       this.returnToOrigin = false
       this.startReturnToOrigin = false
@@ -103,12 +103,12 @@ class Particle {
 
       if (this.curX <= 0 || this.curX >= this.p5.windowWidth) {
         this.velocity.x *= -1
-        this.velocity.x += this.p5.random(-0.5, 0.5)
+        // this.velocity.x += this.p5.random(-0.5, 0.5)
       }
 
       if (this.curY <= 0 || this.curY >= this.p5.windowHeight) {
         this.velocity.y *= -1
-        this.velocity.y += this.p5.random(-0.5, 0.5)
+        // this.velocity.y += this.p5.random(-0.5, 0.5)
       }
 
       if (this.startReturnToOrigin && this.p5.millis() > this.ellipseSec + this.returnToOriginInterval) {
