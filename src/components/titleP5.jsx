@@ -15,7 +15,7 @@ class Cursor {
     this.curX = x
     this.curY = y
     this.interval = 50
-    this.width = 60
+    this.width = 70
     this.ellipseSec = 0
     this.showCursor = false
   }
@@ -103,10 +103,12 @@ class Particle {
 
       if (this.curX <= 0 || this.curX >= this.p5.windowWidth) {
         this.velocity.x *= -1
+        this.velocity.x += this.p5.random(-0.5, 0.5)
       }
 
       if (this.curY <= 0 || this.curY >= this.p5.windowHeight) {
         this.velocity.y *= -1
+        this.velocity.y += this.p5.random(-0.5, 0.5)
       }
 
       if (this.startReturnToOrigin && this.p5.millis() > this.ellipseSec + this.returnToOriginInterval) {
@@ -217,6 +219,10 @@ const draw = (p5) => {
     }
 
     if (letterIndex === 12) {
+      textInterval = 1000
+    }
+
+    if (letterIndex === 34) {
       textInterval = 1000
     }
 
