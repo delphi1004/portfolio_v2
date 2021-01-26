@@ -52,5 +52,11 @@
 | 22 Jan 2021 | 8.0    | Setting CD to blue host. I got technical issues with blue host. It solved. |
 | 24 Jan 2021 | 6.0    | I started learning P5.js |
 | 25 Jan 2021 | 7.0    | P5.js Integration test with React app. |
+| 26 Jan 2021 | 7.5    | Title animation added with P5.js. |
+
+<br />
+<br />
+
+### Total hours = 178
 
 
