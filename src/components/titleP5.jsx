@@ -52,12 +52,14 @@ class Particle {
     this.letter = letter
     this.originX = x
     this.originY = y
-    this.curX = 0
-    this.curY = 0
+    this.curX = x
+    this.curY = y
+    this.velocity = null
     this.textStyle = style
   }
 
   init() {
+    this.velocity = this.p5.createVector(0, 0, 0)
   }
 
   getX() {
@@ -70,7 +72,7 @@ class Particle {
 
   draw() {
     this.p5.textStyle(this.textStyle)
-    this.p5.text(this.letter, this.originX, this.originY)
+    this.p5.text(this.letter, this.curX, this.curY)
   }
 }
 
@@ -111,13 +113,14 @@ const init = (p5, parentRef) => {
 
   let xOffset = 0
   let ketterCount = 0
+  let posY = p5.windowHeight * 0.2
   for (let i = 0; i < title.length; i++) {
     xOffset = 0
     for (let j = 0; j < title[i].length; j++) {
       if (i < 2) {
-        particles.push(new Particle(p5, title[i][j], letterPos[ketterCount] + 100, ((i + 1) * 90) + 300, p5.NORMAL))
+        particles.push(new Particle(p5, title[i][j], letterPos[ketterCount] + 150, ((i + 1) * 90) + posY, p5.NORMAL))
       } else {
-        particles.push(new Particle(p5, title[i][j], letterPos[ketterCount] + 100, ((i + 1) * 75) + 300, p5.BOLD))
+        particles.push(new Particle(p5, title[i][j], letterPos[ketterCount] + 150, ((i + 1) * 75) + posY, p5.BOLD))
       }
       xOffset += p5.textWidth(title[i][j])
       ketterCount++
