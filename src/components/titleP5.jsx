@@ -119,8 +119,6 @@ const init = (p5, parentRef) => {
       } else {
         particles.push(new Particle(p5, title[i][j], letterPos[ketterCount] + 100, ((i + 1) * 75) + 300, p5.BOLD))
       }
-
-      console.log(title[i][j], xOffset)
       xOffset += p5.textWidth(title[i][j])
       ketterCount++
     }
