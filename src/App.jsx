@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css'
 import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom'
 import React from 'react'
@@ -5,6 +6,7 @@ import { useSelector } from 'react-redux'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Header from './components/header'
 import Title from './components/title'
+import TitleP5 from './components/titleP5'
 import About from './components/about'
 import Works from './components/works'
 import Exhibition from './components/exhibitions'
@@ -29,7 +31,8 @@ const RouterViewer = () => {
           <Route exact path='/works/software' component={ProjectBase}></Route>
           <Route exact path='/exhibition/whenlightechoes' component={ProjectBase}></Route>
           <Route exact path='/exhibition/seeingmusic' component={ProjectBase}></Route>
-          <Route exact path='/' component={Title}></Route>
+          {/* <Route exact path='/' component={Title}></Route> */}
+          <Route exact path='/' component={TitleP5}></Route>
         </Switch>
       </CSSTransition>
     </TransitionGroup>
