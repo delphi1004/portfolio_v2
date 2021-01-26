@@ -49,5 +49,8 @@
 | 17 Jan 2021 | 8.0    | Setting CI , bug fixing for testing |
 | 19 Jan 2021 | 7.0    | added project viewer testing scenario |
 | 21 Jan 2021 | 6.0    | project container style modified |
+| 22 Jan 2021 | 8.0    | Setting CD to blue host. I got technical issues with blue host. It solved. |
+| 24 Jan 2021 | 6.0    | I started learning P5.js |
+| 25 Jan 2021 | 7.0    | P5.js Integration test with React app. |
 
 
