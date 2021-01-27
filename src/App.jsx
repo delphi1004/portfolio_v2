@@ -21,6 +21,7 @@ const RouterViewer = () => {
     <TransitionGroup>
       <CSSTransition classNames='views' key={location.key} timeout={1500}>
         <Switch location={location}>
+          <Route exact path='/' component={TitleP5}></Route>
           <Route exact path='/about' component={About}></Route>
           <Route exact path='/works' component={Works}></Route>
           <Route exact path='/exhibition' component={Exhibition}></Route>
@@ -32,7 +33,6 @@ const RouterViewer = () => {
           <Route exact path='/exhibition/whenlightechoes' component={ProjectBase}></Route>
           <Route exact path='/exhibition/seeingmusic' component={ProjectBase}></Route>
           {/* <Route exact path='/' component={Title}></Route> */}
-          <Route exact path='/' component={TitleP5}></Route>
         </Switch>
       </CSSTransition>
     </TransitionGroup>

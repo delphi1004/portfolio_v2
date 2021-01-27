@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './title.css'
 import Curtain from './curtain'
 import Sketch from 'react-p5'
-import { CollectionsBookmarkOutlined, ContactlessOutlined } from '@material-ui/icons'
+import { CollectionsBookmarkOutlined, ContactlessOutlined, ContactSupportOutlined } from '@material-ui/icons'
 
 
 let x = 0
@@ -196,13 +196,8 @@ const init = (p5, parentRef) => {
   }
 }
 
-const resized = (p5) => {
-  p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
-}
-
 const draw = (p5) => {
   p5.background(255, 108, 47)
-  // p5.background(0, 108, 47)
   p5.strokeWeight(1)
 
   p5.stroke(255)
@@ -269,6 +264,10 @@ const TitleP5 = () => {
     }, 1500)
 
   }, [])
+
+  const resized = (p5) => {
+    p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
+  }
 
   return (
     <div id='titleContainer'>

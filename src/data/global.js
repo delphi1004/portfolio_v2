@@ -1,11 +1,12 @@
 export const global = {
   menu: {
-    idle:-1,
-    about: 0,
-    works: 1,
-    exhibition: 2,
-    cv: 3,
-    contact:4
+    idle: -1,
+    home:0,
+    about: 1,
+    works: 2,
+    exhibition: 3,
+    cv: 4,
+    contact:5
   },
   worksMenu: {
     generativeArt:0,
