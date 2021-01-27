@@ -7,10 +7,12 @@
 }
 
 #scroll-prev{
+  margin:0;
+  padding:0;
   cursor: pointer;
-  left:20px;
+  margin-left: -210px;
   position: absolute;
-  height:50%;
+  height:100%;
   width:50px;
   color:silver;
 }
@@ -20,10 +22,12 @@
 }
 
 #scroll-next{
+  margin:0;
+  padding:0;
   cursor: pointer;
   right:10px;
   position: absolute;
-  height:50%;
+  height:100%;
   width:50px;
   color:silver;
 }
