@@ -257,7 +257,6 @@ const TitleP5 = () => {
   const [startP5, setStartP5] = useState(false)
 
   useEffect(() => {
-    console.log('start')
     setTimeout(() => {
       rest()
       setStartP5(true)
