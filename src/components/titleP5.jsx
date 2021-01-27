@@ -54,14 +54,15 @@ class Particle {
     this.ellipseSec = 0
     this.homeVelocity = 0
     this.smallScreenDetected = false
+    this.abstacleRadious = 0
   }
 
   init() {
     this.velocity = this.p5.createVector(0, 0, 0)
   }
 
-  setSmallScreenDetected(smallScreen) {
-    this.smallScreenDetected = smallScreen
+  setObstacleRadious(radious) {
+    this.abstacleRadious = radious
   }
 
   setFlying(enable) {
@@ -72,7 +73,7 @@ class Particle {
     let detect = false
     let dist = this.p5.dist(this.curX, this.curY, x, y)
 
-    if (dist <= 150) {
+    if (dist <= this.abstacleRadious) {
       this.velocity.x = (this.curX - x) * 0.05
       this.velocity.y = (this.curY - y) * 0.05
       this.ellipseSec = this.p5.millis()
@@ -140,6 +141,9 @@ let textInterval = 1000
 let typeText = true
 let smallScreenDetected = false
 let startAnimation = false
+let mousePressed = false
+let abstacleRadious = 200
+let abstacleRadiousDirection = 1.5
 const title = ['I AM', 'JOHN LEE', '', ' ', 'A CREATIVE', 'TECHNOLOGIST', 'NEW MEDIA', 'ARTIST.']
 const letterPos = [0, 27.197265625, 51.953125, 117.1875, 0, 55.17578125, 123.92578125, 195.21484375, 266.50390625,
   291.259765625, 345.068359375, 401.904296875, 0, 0, 65.234375, 89.990234375, 155.078125, 216.650390625, 273.486328125,
@@ -188,8 +192,18 @@ const init = (p5, parentRef) => {
 
   for (let particle of particles) {
     particle.init()
-    particle.setSmallScreenDetected(smallScreenDetected)
+    particle.setObstacleRadious(abstacleRadious - (abstacleRadious * 0.2))
   }
+}
+
+const handleMousePressed = () => {
+  mousePressed = true
+  console.log('handleMousePressed')
+}
+
+const handleMouseReleased = () => {
+  mousePressed = false
+  console.log('handleMouseReleased')
 }
 
 const draw = (p5) => {
@@ -258,10 +272,23 @@ const draw = (p5) => {
     p5.noFill()
     p5.stroke(255)
     p5.strokeWeight(10 - p5.sin(p5.frameCount / 10) * 5)
-    p5.ellipse(p5.mouseX, p5.mouseY, 200, 200)
+    p5.ellipse(p5.mouseX, p5.mouseY, abstacleRadious, abstacleRadious)
 
+    p5.cursor('grab')
     for (let parcitle of particles) {
       parcitle.setObstacle(p5.mouseX, p5.mouseY)
+    }
+
+    if (mousePressed) {
+      abstacleRadious += abstacleRadiousDirection
+
+      if (abstacleRadious > 400 || abstacleRadious < 40) {
+        abstacleRadiousDirection *= -1
+      }
+
+      for (let parcitle of particles) {
+        parcitle.setObstacleRadious(abstacleRadious - (abstacleRadious * 0.2))
+      }
     }
   }
 }
@@ -302,6 +329,8 @@ const TitleP5 = () => {
 
           draw={p5 => draw(p5)}
           windowResized={p5 => resized(p5)}
+          mousePressed={() => handleMousePressed()}
+          mouseReleased={() => handleMouseReleased()}
         />
       }
     </div>
