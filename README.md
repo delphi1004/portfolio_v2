@@ -53,10 +53,11 @@
 | 24 Jan 2021 | 6.0    | I started learning P5.js |
 | 25 Jan 2021 | 7.0    | P5.js Integration test with React app. |
 | 26 Jan 2021 | 7.5    | Title animation added with P5.js. |
+| 27 Jan 2021 | 4.5    | home menu added , modified for small screen. |
 
 <br />
 <br />
 
-### Total hours = 178
+### Total hours = 182.5
 
 
