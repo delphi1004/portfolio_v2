@@ -198,12 +198,10 @@ const init = (p5, parentRef) => {
 
 const handleMousePressed = () => {
   mousePressed = true
-  console.log('handleMousePressed')
 }
 
 const handleMouseReleased = () => {
   mousePressed = false
-  console.log('handleMouseReleased')
 }
 
 const draw = (p5) => {
