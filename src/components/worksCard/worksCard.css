@@ -194,3 +194,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media only screen and (max-width: 1300px) {
+   #thumbnailImage{
+   opacity: 1;
+   width:246px;
+   transition: all 0.4s ease-in-out; 
+ }
+}

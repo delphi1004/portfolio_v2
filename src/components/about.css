@@ -109,14 +109,37 @@
   100% {opacity: 1;}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
 
   #aboutContainer{
     flex-direction: column;
   }
 
+  #about-title{
+    font-size: 25px;
+  }
+
   #about-description{
+    margin:0;
     margin-top: 50px;
     align-items: center;
+  }
+
+  #about-image-container{
+    margin-top: 140px;
+  }
+
+  #about-image{
+    width:60vw;
+  }
+
+  #about-text{
+    text-align: justify;
+    font-size: 16px;
+    width:82vw;
+  }
+
+  #about-sub-title{
+    width:100vw;
   }
 }
