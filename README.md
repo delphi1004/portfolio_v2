@@ -59,6 +59,6 @@
 <br />
 <br />
 
-### Total hours = 182.5
+### Total hours = 186.5
 
 
