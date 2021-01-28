@@ -29,9 +29,11 @@
   animation-delay: 2.5s;
 }
 
-@keyframes project-category {
-  0% {opacity: 0; left:-300px;}
-  100% {opacity: 1 ; left:-80px;}
+@media only screen and (min-width: 1300px) {
+  @keyframes project-category {
+    0% {opacity: 0; left:-300px;}
+    100% {opacity: 1 ; left:-80px;}
+  }
 }
 
 #project-separator{
