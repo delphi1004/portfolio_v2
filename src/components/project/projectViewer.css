@@ -142,7 +142,7 @@
 
 @keyframes tool-title {
   0% {left: 100vw;padding-left:0;opacity: 0}
-  100% {left:0;padding-left:0px;opacity: 1}
+  100% {left:0;padding-left:35px;opacity: 1}
 }
 
 @media only screen and (max-width: 1300px) {
