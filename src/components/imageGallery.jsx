@@ -8,9 +8,10 @@ import { setShowFullScreenGallery } from '../reducer/statusReducer'
 const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandler = null, initialPageNo = 0 }) => {
   const dispatch = useDispatch()
   const scale = showOriginalSize ? info.fullScreenScale : 1
-  const gellaryHeight = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
+  let gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
   const resourceLength = info.contentsImage.length
   const myRef = useRef(undefined)
+  const smallScreenScale = 2
   const [indicatorWidth, setIndicatorWidth] = useState(0)
   const [pageNo, setPageNo] = useState(initialPageNo)
   const [indicatorPos, setIndicatorPos] = useState(0)
@@ -96,13 +97,19 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
   }
 
   const clickHandler = () => {
-    if (!showOriginalSize) {
+    if (!showOriginalSize && window.innerWidth > 1300) {
       fullScreenHandler(pageNo)
     }
   }
 
+  if (window.innerWidth > 1300) {
+    gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
+  } else {
+    gellarySize = { width: `${info.width * smallScreenScale * scale}vw`, height: `${info.width * smallScreenScale * scale * info.aspecRatio}vw` }
+  }
+
   return (
-    <div className={startAnimation ? 'gallery-container gallery-active' : 'gallery-container'} style={gellaryHeight}>
+    <div className={startAnimation ? 'gallery-container gallery-active' : 'gallery-container'} style={gellarySize}>
       {(indicatorWidth > 0 && info.contentsImage.length > 1) &&
         <div id='indicator' style={{ width: `${indicatorWidth}px`, left: indicatorPos }}></div>
       }

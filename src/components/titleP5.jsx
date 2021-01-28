@@ -3,7 +3,6 @@ import './title.css'
 import Curtain from './curtain'
 import Sketch from 'react-p5'
 
-
 class Cursor {
 
   constructor(p5, x, y) {
