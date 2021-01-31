@@ -8,7 +8,7 @@ import { setShowFullScreenGallery } from '../reducer/statusReducer'
 
 
 const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandler = null, initialPageNo = 0 }) => {
-  const navigationButtonScale = 2.3
+  const navigationButtonScale = 2.5
   const dispatch = useDispatch()
   const scale = showOriginalSize ? info.fullScreenScale : 1
   let gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
