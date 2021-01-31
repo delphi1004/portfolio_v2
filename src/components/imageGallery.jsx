@@ -5,10 +5,15 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import { setShowFullScreenGallery } from '../reducer/statusReducer'
 
+
+
 const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandler = null, initialPageNo = 0 }) => {
+  const navigationButtonScale = 2.3
   const dispatch = useDispatch()
   const scale = showOriginalSize ? info.fullScreenScale : 1
   let gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
+  let prevButtonPosition = { transform: `translateX(${info.width * scale / navigationButtonScale * -1}vw)` }
+  let nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale + 0.07)}vw)` }
   const resourceLength = info.contentsImage.length
   const myRef = useRef(undefined)
   const smallScreenScale = 2
@@ -104,20 +109,23 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
 
   if (window.innerWidth > 1300) {
     gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
+    prevButtonPosition = { transform: `translateX(${info.width * scale / navigationButtonScale * -1}vw)` }
+    nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale - 0.07)}vw)` }
   } else {
     gellarySize = { width: `${info.width * smallScreenScale * scale}vw`, height: `${info.width * smallScreenScale * scale * info.aspecRatio}vw` }
+    prevButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / navigationButtonScale * -1}vw)` }
+    nextButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / (navigationButtonScale - 0.07)}vw)` }
   }
+
+  console.log(gellarySize, prevButtonPosition, nextButtonPosition)
 
   return (
     <div className={startAnimation ? 'gallery-container gallery-active' : 'gallery-container'} style={gellarySize}>
       {(indicatorWidth > 0 && info.contentsImage.length > 1) &&
         <div id='indicator' style={{ width: `${indicatorWidth}px`, left: indicatorPos }}></div>
       }
-      {info.contentsImage.length > 1 && <ArrowBackIosIcon id='scroll-prev' onClick={onPrevhandler} />}
-      {info.contentsImage.length > 1 && <ArrowForwardIosIcon id='scroll-next' onClick={onNexthandler} />}
-      {/* {info.contentsImage.length > 1 && <p id='scroll-prev' onClick={onPrevhandler}>-</p>}
-      {info.contentsImage.length > 1 && <p id='scroll-next' onClick={onNexthandler}>+</p>} */}
-
+      {info.contentsImage.length > 1 && <ArrowBackIosIcon id='scroll-prev' style={prevButtonPosition} onClick={onPrevhandler} />}
+      {info.contentsImage.length > 1 && <ArrowForwardIosIcon id='scroll-next' style={nextButtonPosition} onClick={onNexthandler} />}
       <div id='gallery' ref={myRef} onClick={() => clickHandler()}>
         {info.contentsImage.map((resource, index) => SelectResource(resource, index))}
       </div>

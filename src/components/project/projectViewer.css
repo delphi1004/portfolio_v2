@@ -6,6 +6,7 @@
 #projectViewer {
   z-index: -2;
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
   color:white;
   align-items: center;
