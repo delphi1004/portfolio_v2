@@ -55,10 +55,11 @@
 | 26 Jan 2021 | 7.5    | Title animation added with P5.js. |
 | 27 Jan 2021 | 4.5    | home menu added , modified for small screen. |
 | 28 Jan 2021 | 4.0    | Responsible style added |
+| 28 Jan 2021 | 4.0    | modifed navagation button of image gallery for responsive style |
 
 <br />
 <br />
 
-### Total hours = 186.5
+### Total hours = 191.5
 
 
