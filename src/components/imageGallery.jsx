@@ -117,8 +117,6 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
     nextButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / (navigationButtonScale - 0.07)}vw)` }
   }
 
-  console.log(gellarySize, prevButtonPosition, nextButtonPosition)
-
   return (
     <div className={startAnimation ? 'gallery-container gallery-active' : 'gallery-container'} style={gellarySize}>
       {(indicatorWidth > 0 && info.contentsImage.length > 1) &&
