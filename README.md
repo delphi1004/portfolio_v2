@@ -9,7 +9,7 @@
 <br />
 <br />
 
-### Working hours of the first half of the project ( https://github.com/delphi1004/fullstack2020-project ).
+### Repository for the first half of the project ( https://github.com/delphi1004/fullstack2020-project ).
 <br />
 
 | day | hours | details  |
@@ -31,7 +31,7 @@
 <br />
 <br />
 
-### Working hours of the second half of the project ( https://github.com/delphi1004/portfolio_v2 ).
+### Repository for the second half of the project ( https://github.com/delphi1004/portfolio_v2 ).
 <br />
 
 
@@ -60,6 +60,6 @@
 <br />
 <br />
 
-### Total hours = 191.5
+### Total hours (first repo + second repo) = 191.5
 
 
