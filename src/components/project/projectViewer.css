@@ -2,7 +2,6 @@
   --minScreen:1300px;
 }
 
-
 #projectViewer {
   z-index: -2;
   display: flex;

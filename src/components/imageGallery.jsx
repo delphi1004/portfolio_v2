@@ -5,15 +5,13 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import { setShowFullScreenGallery } from '../reducer/statusReducer'
 
-
-
 const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandler = null, initialPageNo = 0 }) => {
   const navigationButtonScale = 2.5
   const dispatch = useDispatch()
   const scale = showOriginalSize ? info.fullScreenScale : 1
   let gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
   let prevButtonPosition = { transform: `translateX(${info.width * scale / navigationButtonScale * -1}vw)` }
-  let nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale + 0.07)}vw)` }
+  let nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale + 0.05)}vw)` }
   const resourceLength = info.contentsImage.length
   const myRef = useRef(undefined)
   const smallScreenScale = 2
@@ -110,11 +108,11 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
   if (window.innerWidth > 1300) {
     gellarySize = { width: `${info.width * scale}vw`, height: `${info.width * scale * info.aspecRatio}vw` }
     prevButtonPosition = { transform: `translateX(${info.width * scale / navigationButtonScale * -1}vw)` }
-    nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale - 0.07)}vw)` }
+    nextButtonPosition = { transform: `translateX(${info.width * scale / (navigationButtonScale - 0.05)}vw)` }
   } else {
     gellarySize = { width: `${info.width * smallScreenScale * scale}vw`, height: `${info.width * smallScreenScale * scale * info.aspecRatio}vw` }
     prevButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / navigationButtonScale * -1}vw)` }
-    nextButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / (navigationButtonScale - 0.07)}vw)` }
+    nextButtonPosition = { transform: `translateX(${info.width * scale * smallScreenScale / (navigationButtonScale - 0.05)}vw)` }
   }
 
   return (
