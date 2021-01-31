@@ -14,7 +14,7 @@
 
 | day | hours | details  |
 | :----:|:-----| :-----|
-| 14 Dec 2020 | 4.5    | Ideation , planning |
+| 14 Dec 2020 | 5.5    | Ideation , planning |
 | 15 Dec 2020 | 5.5    | Research well made portfolio sites |
 | 16 Dec 2020 | 7.5    | Study about flex box , css animation , webpack configuration |
 | 17 Dec 2020 | 6.5    | Initial commit , preparing configuration (e.g. packages , eslint)|
@@ -24,7 +24,7 @@
 | 21 Dec 2020 | 8.5    | scroll bar style modified , added project container , modified project viewer |
 | 22 Dec 2020 | 6.5    | added responsive css style for project container |
 | 23 Dec 2020 | 7.5    | modified project viewer , refactoring it |
-| 24 Dec 2020 | 4.0    | modified workscard , added resources |
+| 24 Dec 2020 | 5.0    | modified workscard , added resources |
 | 28 Dec 2020 | 8.0    | first added image gallery module , modified css style for several modules |
 | 31 Dec 2020 | 7.5    | first added contact card  , current repo has moved to the new repo , setting cpanel |
 
@@ -55,11 +55,11 @@
 | 26 Jan 2021 | 7.5    | Title animation added with P5.js. |
 | 27 Jan 2021 | 4.5    | home menu added , modified for small screen. |
 | 28 Jan 2021 | 4.0    | Responsible style added |
-| 28 Jan 2021 | 4.0    | modifed navagation button of image gallery for responsive style |
+| 31 Jan 2021 | 5.0    | modifed navagation button of image gallery for responsive style |
 
 <br />
 <br />
 
-### Total hours (first repo + second repo) = 191.5
+### Total hours (first repo + second repo) = 193.5
 
 
