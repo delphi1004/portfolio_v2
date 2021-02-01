@@ -7,33 +7,39 @@
 }
 
 #scroll-prev{
+  opacity: 0.5;
   margin:0;
   padding:0;
   cursor: pointer;
-  /* left:20px; */
   position: absolute;
   height:50%;
   width:50px;
   color:silver;
+  transition: opacity 0.5s;
 }
 
 #scroll-prev:hover{
-  color:rgb(230,230,230)
+  color:rgb(230,230,230);
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 #scroll-next{
+  opacity: 0.5;
   margin:0;
   padding:0;
   cursor: pointer;
-  /* right:10px; */
   position: absolute;
   height:50%;
   width:50px;
   color:silver;
+  transition: opacity 0.5s;
 }
 
 #scroll-next:hover{
-  color:rgb(230,230,230)
+  color:rgb(230,230,230);
+  opacity: 1;
+  transition: all 0.5s;
 }
 
 #full-screen{
