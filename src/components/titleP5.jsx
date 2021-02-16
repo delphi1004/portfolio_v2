@@ -162,7 +162,7 @@ const rest = () => {
 }
 
 const init = (p5, parentRef) => {
-  p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(parentRef)
+  p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.P2D).parent(parentRef)
   p5.noStroke()
   p5.textFont('Roboto')
   p5.textSize(100)
