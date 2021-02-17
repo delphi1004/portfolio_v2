@@ -12,52 +12,28 @@ const statusInfo = {
   }
 }
 
-export const setCurrentMenu = (id) => {
-  return dispatch => {
-    dispatch(
-      {
-        type: 'SET_CURRENT_MENU',
-        currentMenu : id
-      }
-    )
-  }
-}
+export const setCurrentMenu = (id) => ({
+  type: 'SET_CURRENT_MENU',
+  currentMenu: id,
+})
 
-export const setCurrentSubMenu = (id) => {
-  return dispatch => {
-    dispatch(
-      {
-        type: 'SET_CURRENT_SUB_MENU',
-        currentSubMenu : id
-      }
-    )
-  }
-}
+export const setCurrentSubMenu = (id) => ({
+  type: 'SET_CURRENT_SUB_MENU',
+  currentSubMenu : id
+})
 
-export const setShowFullScreenGallery = (show) => {
-  return dispatch => {
-    dispatch(
-      {
-        type: 'SET_SHOW_FULL_SCREEN_GALLERY',
-        showFullScreenGallery : show
-      }
-    )
-  }
-}
+export const setShowFullScreenGallery = (show) => ({
+  type: 'SET_SHOW_FULL_SCREEN_GALLERY',
+  showFullScreenGallery: show
+})
 
-export const setFullScreenGalleryInfo = (info , initialPageNo) => {
-  return dispatch => {
-    dispatch(
-      {
-        type: 'SET_FULL_SCREEN_GALLERY_INFO',
-        fullScreenGalleryInfo: {
-          info: info,
-          initialPageNo: initialPageNo
-        }
-      }
-    )
+export const setFullScreenGalleryInfo = (info, initialPageNo) => ({
+  type: 'SET_FULL_SCREEN_GALLERY_INFO',
+  fullScreenGalleryInfo: {
+    info: info,
+    initialPageNo: initialPageNo
   }
-}
+})
 
 const statusReducer = (state = statusInfo, action) => {
 
