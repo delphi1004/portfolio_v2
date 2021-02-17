@@ -1,14 +1,14 @@
 import React from 'react'
-import './title.css'
-import Curtain from './curtain'
+import './home.css'
+import Curtain from '../components/curtain/curtain'
 
-const Title = () => {
+const Home = () => {
   return (
-    <div id='titleContainer'>
+    <div id='homeContainer'>
       <Curtain />
       <div style={{ marginTop: '20vh' }}></div>
-      <p className='title'>I am</p>
-      <p className='title-second' style={{ marginBottom: '40px' }}>John Lee</p>
+      <p className='home'>I am</p>
+      <p className='home-second' style={{ marginBottom: '40px' }}>John Lee</p>
       <div style={{ marginTop: '4vh' }}></div>
       <p className='description'>a Creative</p>
       <p className='description'>technologist</p>
@@ -18,4 +18,4 @@ const Title = () => {
   )
 }
 
-export default Title
+export default Home

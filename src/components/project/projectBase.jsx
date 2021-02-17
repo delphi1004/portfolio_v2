@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './projectBase.css'
-import { Data_Exhibition_WhenLightEchoes, Data_Exhibition_SeeingMusic, Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../data/global'
-import ProjectContainer from './project/projectContainer'
+import { Data_Exhibition_WhenLightEchoes, Data_Exhibition_SeeingMusic, Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../../data/global'
+import ProjectContainer from './projectContainer'
 
 let currentViewData
 const viewData = []

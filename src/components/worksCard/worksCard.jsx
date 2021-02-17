@@ -26,7 +26,7 @@ const WorksCard = ({ index, info }) => {
 
   return (
     <div id='worksCard' style={{ '--backgroundColor': info.backgroundColor, '--delay': delay }} onClick={() => clickHandler(info.id)}>
-      <img id='thumbnailImage' src={require(`../../data/images/thumbnail/${info.titleImage}`).default} alt='image' />
+      <img id='thumbnailImage' src={require(`../../../public/images/thumbnail/${info.titleImage}`).default} alt='image' />
       <p id='works-title'>{info.title}</p>
       <p id='works-separator'></p>
       <p id='works-description'>{info.description}</p>

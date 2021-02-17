@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './fullScreenProjectViewer.css'
 import { useDispatch } from 'react-redux'
-import ImageGallery from '../imageGallery'
+import ImageGallery from '../imageGallery/imageGallery'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
 import { setShowFullScreenGallery } from '../../reducer/statusReducer'
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import './title.css'
-import Curtain from './curtain'
+import './home.css'
+import Curtain from '../curtain/curtain'
 import Sketch from 'react-p5'
 
 class Cursor {
@@ -290,7 +290,7 @@ const draw = (p5) => {
   }
 }
 
-const TitleP5 = () => {
+const HomeP5 = () => {
   const [startP5, setStartP5] = useState(false)
 
   useEffect(() => {
@@ -334,4 +334,4 @@ const TitleP5 = () => {
   )
 }
 
-export default TitleP5
+export default HomeP5

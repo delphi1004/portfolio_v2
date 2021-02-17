@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
 import './about.css'
 
 const About = () => {
-  const image = require('../data/images/originalSize/about.JPG')
+  const image = require('../../../public/images/originalSize/about.JPG')
 
   return (
     <div id='aboutContainer'>

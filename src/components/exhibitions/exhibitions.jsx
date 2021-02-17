@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { setCurrentSubMenu } from '../reducer/statusReducer'
-import { global } from '../data/global'
-import { Data_ExhibitionSubMenu } from '../data/global'
+import { setCurrentSubMenu } from '../../reducer/statusReducer'
+import { global } from '../../data/global'
+import { Data_ExhibitionSubMenu } from '../../data/global'
 import './exhibitions.css'
-import WorksCard from './worksCard/worksCard'
+import WorksCard from '../worksCard/worksCard'
 
 const Exhibition = () => {
   const dispatch = useDispatch()

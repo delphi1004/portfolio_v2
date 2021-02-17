@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { setCurrentMenu } from '../reducer/statusReducer'
-import { global } from '../data/global'
+import { setCurrentMenu } from '../../reducer/statusReducer'
+import { global } from '../../data/global'
 import './header.css'
 
 const Header = () => {

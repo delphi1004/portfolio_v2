@@ -1,4 +1,4 @@
-#titleContainer {
+#homeContainer {
     /* background-color: #FF6C2F; */
     width:100%;
     height:100%;
@@ -11,7 +11,7 @@
     justify-content: flex-start;
 }
 
-.title{
+.home{
     opacity: 0;
     margin:0;
     color:black;
@@ -23,11 +23,11 @@
     margin-left: 100px;
     text-align: left;
     line-height: 90%;
-   -webkit-animation: 1s ease-in-out 0s normal forwards 1 titleFadein;
-    animation: 1s ease-in-out 0s normal forwards 1 titleFadein;
+   -webkit-animation: 1s ease-in-out 0s normal forwards 1 homeFadein;
+    animation: 1s ease-in-out 0s normal forwards 1 homeFadein;
 }
 
-.title-second{
+.home-second{
     opacity: 0;
     margin:0;
     color:black;
@@ -39,17 +39,17 @@
     margin-left: 100px;
     text-align: left;
     line-height: 90%;
-   -webkit-animation: 3s ease-in-out 0s normal forwards 1 title-second-Fadein;
-    animation: 3s ease-in-out 0s normal forwards 1 title-second-Fadein;
+   -webkit-animation: 3s ease-in-out 0s normal forwards 1 home-second-Fadein;
+    animation: 3s ease-in-out 0s normal forwards 1 home-second-Fadein;
     animation-delay: 1s;
 }
 
-@keyframes titleFadein{
+@keyframes homeFadein{
     0% { opacity:0.2;margin-left:100vw}
     100% { opacity:1; margin-left:100px}
 }
 
-@keyframes title-second-Fadein{
+@keyframes home-second-Fadein{
     0% { opacity:0;}
     100% { opacity:1;}
 }

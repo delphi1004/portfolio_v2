@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import './projectViewer.css'
-import ImageGallery from '../imageGallery'
+import ImageGallery from '../imageGallery/imageGallery'
 import { setShowFullScreenGallery, setFullScreenGalleryInfo } from '../../reducer/statusReducer'
 
 const ProjectViewer = ({ info }) => {

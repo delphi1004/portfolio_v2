@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import React, { useEffect, useRef, useState } from 'react'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
-import { setShowFullScreenGallery } from '../reducer/statusReducer'
+import { setShowFullScreenGallery } from '../../reducer/statusReducer'
 
 const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandler = null, initialPageNo = 0 }) => {
   const navigationButtonScale = 2.5
@@ -78,9 +78,9 @@ const ImageGallery = ({ info, showOriginalSize, startAnimation, fullScreenHandle
     let resource
 
     if (showOriginalSize) {
-      resource = require(`../data/images/originalSize/${image}`)
+      resource = require(`../../../public/images/originalSize/${image}`)
     } else {
-      resource = require(`../data/images/middleSize/${image}`)
+      resource = require(`../../../public/images/middleSize/${image}`)
     }
 
     return (
