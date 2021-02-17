@@ -4,8 +4,8 @@ import { act } from 'react-dom/test-utils'
 import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router } from 'react-router-dom'
-import Title from '../src/components/title'
-import Header from '../src/components/header'
+import Home from '../src/components/home/home'
+import Header from '../src/components/header/header'
 import ProjectContainer from '../src/components/project/projectContainer'
 import { Data_Generative } from '../src/data/global'
 import configureMockStore from 'redux-mock-store'
@@ -30,7 +30,7 @@ describe('check the contents', () => {
 
   it('renders title', () => {
     const component = render(
-      <Title />
+      <Home />
     )
     expect(component.container).toHaveTextContent(
       'John Lee'

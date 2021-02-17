@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import Curtain from '../components/curtain/curtain'
+import Curtain from '../curtain/curtain'
 
 const Home = () => {
   return (
