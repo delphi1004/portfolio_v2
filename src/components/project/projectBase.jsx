@@ -1,38 +1,39 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import './projectBase.css'
 import { Data_Exhibition_WhenLightEchoes, Data_Exhibition_SeeingMusic, Data_Generative, Data_Interactive, Data_Modeling, Data_Software } from '../../data/global'
 import ProjectContainer from './projectContainer'
 
 let currentViewData
 const viewData = []
-viewData['works-generativeart'] = {
+viewData['generativeart'] = {
   data: Data_Generative, title: 'Generative Art', background: '#bf8726'
 }
-viewData['works-interactiveart'] = {
+viewData['interactiveart'] = {
   data: Data_Interactive, title: 'Interactive Art', background: '#bfa126'
 }
-viewData['works-modeling'] = {
+viewData['modeling'] = {
   data: Data_Modeling, title: '3D Modeling', background: '#bfba26'
 }
-viewData['works-software'] = {
+viewData['software'] = {
   data: Data_Software, title: 'Software development', background: '#abbf26'
 }
 
-viewData['exhibition-whenlightechoes'] = {
+viewData['whenlightechoes'] = {
   data: Data_Exhibition_WhenLightEchoes, title: 'Exhibition', background: '#bf8726'
 }
 
-viewData['exhibition-seeingmusic'] = {
+viewData['seeingmusic'] = {
   data: Data_Exhibition_SeeingMusic, title: 'Exhibition', background: '#bfa126'
 }
 
 const ProjectBase = () => {
   const [backgroundColor, setBackgroundColor] = useState()
+  const { project } = useParams()
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    const currentUrl = window.location.href.split('/')
-    currentViewData = viewData[`${currentUrl[3]}-${currentUrl[4]}`]
+    currentViewData = viewData[project]
     setBackgroundColor(currentViewData.background)
   }, [])
 

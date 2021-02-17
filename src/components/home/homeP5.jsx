@@ -309,10 +309,6 @@ const HomeP5 = () => {
     } else {
       smallScreenDetected = false
     }
-
-    for (let particle of particles) {
-      particle.setSmallScreenDetected(smallScreenDetected)
-    }
   }
 
   return (
