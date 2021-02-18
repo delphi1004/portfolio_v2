@@ -4,15 +4,10 @@ import React, { Suspense, lazy } from 'react'
 import { useSelector } from 'react-redux'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import Header from './components/header/header'
-import HomeP5 from './components/home/homeP5'
-// import About from './components/about/about'
-// import Works from './components/worksCard/works'
-// import Exhibition from './components/exhibitions/exhibitions'
-// import Contact from './components/contact/contact'
-// import ProjectBase from './components/project/projectBase'
-// import FullScreenProjectViewer from './components/project/fullScreenProjectViewer'
+
 require('../public/favicon.ico')
 
+const HomeP5 = lazy(() => import('./components/home/homeP5'))
 const About = lazy(() => import('./components/about/about'))
 const Works = lazy(() => import('./components/worksCard/works'))
 const Exhibition = lazy(() => import('./components/exhibitions/exhibitions'))
@@ -27,8 +22,15 @@ const RouterViewer = () => {
     <TransitionGroup>
       <CSSTransition classNames='views' key={location.key} timeout={1500}>
         <Switch location={location}>
-          <Route exact path='/' component={HomeP5}></Route>
+          {/* <Route exact path='/' component={widhSuspense(HomeP5)}></Route>
+          <Route exact path='/about' component={widhSuspense(About)}></Route>
+          <Route exact path='/works' component={widhSuspense(Works)}></Route>
+          <Route exact path='/exhibition' component={widhSuspense(Exhibition)}></Route>
+          <Route exact path='/contact' component={widhSuspense(Contact)}></Route>
+          <Route exact path='/works/:project' component={widhSuspense(ProjectBase)}></Route>
+          <Route exact path='/exhibition/:project' component={widhSuspense(ProjectBase)}></Route> */}
           <Suspense fallback={null}>
+            <Route exact path='/' component={HomeP5}></Route>
             <Route exact path='/about' component={About}></Route>
             <Route exact path='/works' component={Works}></Route>
             <Route exact path='/exhibition' component={Exhibition}></Route>
