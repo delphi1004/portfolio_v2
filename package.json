@@ -1,11 +1,13 @@
 {
-  "name": "fullstack2020-project",
+  "name": "portfolio project v2",
   "version": "1.0.0",
   "description": "Full Stack 2020 project",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development --port 5000",
     "eslint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "jest",
     "build": "webpack --mode production"
   },
@@ -14,14 +16,14 @@
     "url": "git+https://github.com/delphi1004/portfolio_v2.git"
   },
   "keywords": [
-    "fullstack2020-project"
+    "portfolio-project-v2"
   ],
   "author": "delphi1004",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/delphi1004/portfolio_v2.git/issues"
   },
-  "homepage": "https://portfolio.johnlee012.com/",
+  "homepage": "https://delphi1004.github.io/portfolio_v2/",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-transform-runtime": "^7.12.10",
@@ -39,6 +41,7 @@
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-react": "^7.19.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
